@@ -10,6 +10,6 @@ strategy.o: strategy.h strategy.cc
 
 main: tic_tac_toe.o strategy.o
 	$(CXX) $(CFLAGS) -o main tic_tac_toe.o strategy.o main.cc
-	
+
 clean:
-	$(RM) *.o *.gch a.out
+	$(RM) *.o *.gch a.out main

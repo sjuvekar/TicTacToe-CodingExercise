@@ -1,5 +1,7 @@
 #include "tic_tac_toe.h"
 
+namespace game {
+
 TicTacToe::TicTacToe() {
   for (int i = 0; i < sz; i++) {
     std::vector<strategy::Player> row(sz, strategy::NONE);
@@ -30,3 +32,5 @@ void TicTacToe::ComputerMove() {
 bool TicTacToe::IsWinner(strategy::Player p) const {
   return strategy::IsWinner(board, p);
 }
+
+}  // namespace game

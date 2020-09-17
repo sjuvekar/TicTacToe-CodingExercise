@@ -4,7 +4,7 @@
 #include <iostream>
 
 int main (int argc, char *argv[]) {
-  TicTacToe t;
+  game::TicTacToe t;
   strategy::DecisionTreeStrategy strat;
   t.SetStrategy(&strat);
   std::cout << t.Display();

@@ -7,6 +7,8 @@
 #include <string>
 #include <vector>
 
+namespace game {
+
 class TicTacToe {
 
 public:
@@ -26,5 +28,7 @@ private:
   std::vector<std::vector<strategy::Player> > board;
   strategy::Strategy* strat = nullptr;
 };
+
+}  // namespace game
 
 #endif  // SJUVEKAR_HOMEPAGE_CPPCODINGZEN_TIC_TAC_TOE_H
